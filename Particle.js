@@ -6,8 +6,7 @@ class Particle {
         }
         this.r=r;
       
-        this.body = Bodies.circle(x, y, this.r,options);       
-        this.color=color(random(0, 255), random(0, 255), random(0, 255));
+        this.body = Bodies.circle(x, y, this.r,options);
         World.add(world, this.body);
 
     }
@@ -20,7 +19,7 @@ class Particle {
         translate(pos.x, pos.y);
         rotate(angle);
         noStroke();
-        fill(this.color)
+        fill("black")
         ellipseMode(RADIUS);
         ellipse(0, 0, this.r,this.r);
         pop();
