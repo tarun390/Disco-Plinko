@@ -58,7 +58,7 @@ function setup() {
 
 
 function draw() {
-  background(random(0,255),random(0,255),random(0,255));
+  background(0);
 
   Engine.update(engine);
  
